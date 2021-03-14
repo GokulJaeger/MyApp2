@@ -1,0 +1,19 @@
+<div>
+    <h4>Login</h4>
+    <div>
+        <span>User ID</span>
+        <div>
+            <input type="text" [(ngModel)]="uid" placeholder="Enter Username">
+        </div>
+    </div>
+    <div>
+        <span>Password</span>
+        <div>
+            <input type="password" [(ngModel)]="pwd" placeholder="Enter Password">
+        </div>
+    </div>
+    <div>
+        <button (click)="handlelogin()" class="btn-btn">Login</button>
+    </div>
+
+</div>
