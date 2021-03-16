@@ -12,7 +12,7 @@ const routes: Routes = [
   children:[
     { path: 'currency', component: CurrencyComponent },
     { path: 'unitconversion', component: UnitconversionComponent },
-    { path: '', redirectTo: 'currency', pathMatch: 'full' }
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
   ] },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PagenotfoundComponent }

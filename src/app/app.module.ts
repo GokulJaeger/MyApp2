@@ -9,6 +9,9 @@ import { UnitconversionComponent } from './components/unitconversion/unitconvers
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { KmtomPipe } from './components/pipes/kmtom.pipe';
+import { CmtomPipe } from './components/pipes/cmtom.pipe';
+import { CitofhPipe } from './components/pipes/citofh.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     CurrencyComponent,
     UnitconversionComponent,
     PagenotfoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    KmtomPipe,
+    CmtomPipe,
+    CitofhPipe
   ],
   imports: [
     BrowserModule,

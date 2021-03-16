@@ -10,7 +10,8 @@ export class CurrencyComponent implements OnInit {
   val1!: number;
   from!: string;
   to!: string;
-  conv!: number;
+  conv!: string;
+  tot!: number;
   constructor() { }
 
   ngOnInit(): void {
@@ -23,11 +24,15 @@ export class CurrencyComponent implements OnInit {
     this.to=te.target.value;
   }
   handleconvert(){
+    console.log(this.from+" "+this.to);
+    
     if(this.from=='indian' && this.to=='us'){
-      this.conv=this.val1*73.45;
+      this.tot=this.val1/73.45;
+      this.conv=this.tot.toPrecision(8);
     }
-    else if(this.from=='indian' && this.to=='us'){
-      this.conv=this.val1/73.45;
+    else if(this.from=='us' && this.to=='indian'){
+      this.tot=this.val1*73.45;
+      this.conv=this.tot.toPrecision(8);
     }
     else{
       this.conv=this.conv;

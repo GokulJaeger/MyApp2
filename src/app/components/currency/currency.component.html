@@ -1,25 +1,26 @@
-<p>currency works!</p>
+<div>
+    <span>Forex Conversion</span>
+</div>
 <div>
     <input type="number" [(ngModel)]="val1" placeholder="0.00">
     <div>
-        <select (change)="fromcurrency($event)" class="form-control">
+        <select (change)="fromcurrency($event)" class="form-control" style="width: 150px;">
             <option value="sadfsdf" disabled selected>Currency</option>
             <option value="indian">INR</option>
             <option value="us">USD</option>
         </select>
     </div>
     <div>
-        <select (change)="tocurrency($event)" class="form-control">
+        <select (change)="tocurrency($event)" class="form-control" style="width: 150px;">
             <option value="sadfsdf" disabled selected>Currency</option>
             <option value="indian">INR</option>
             <option value="us">USD</option>>
         </select>
     </div>
     <div>
-        <button (click)="handleconvert()" class="btn-btn" aria-placeholder="Calculate">Calculate</button>
+        <button (click)="handleconvert()" class="inut" aria-placeholder="Calculate">Calculate</button>
     </div>
     <div>
-        <span>Value</span>
         <input type="text" [(ngModel)]="conv" placeholder="0.00">
     </div>
 </div>

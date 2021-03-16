@@ -11,5 +11,9 @@ export class UnitconversionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  title = 'unit-conversion';
+  public km = 0;
+  public cm = 0;
+  public cel = 0;
 }

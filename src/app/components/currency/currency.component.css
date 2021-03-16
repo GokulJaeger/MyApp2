@@ -1,0 +1,12 @@
+.inut {
+    padding: 6px 13px;
+    margin: 10px 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    background-color: rgb(131, 205, 255);
+  }
+.inut:hover {
+    opacity: 0.5;
+  }

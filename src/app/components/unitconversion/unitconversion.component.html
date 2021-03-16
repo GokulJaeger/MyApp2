@@ -1,1 +1,31 @@
-<p>unitconversion works!</p>
+<h3>Unit conversion</h3>
+<div>
+    <h3>(Kilometer to Meter)</h3>
+<p>
+  <label for="kilometer">KM</label> &nbsp;&nbsp;
+  <input [(ngModel)]="km"  name="km" type="number" id="km"/>
+</p><p>
+  <label for="meter">M</label> &nbsp;
+  <span> {{km | kmtom}}m </span>
+</p>
+</div>
+<div>
+    <h3>(Centimeter to Meter)</h3>
+<p>
+  <label for="Centimeter">CM</label> &nbsp;&nbsp;
+  <input [(ngModel)]="cm"  name="cm" type="number" id="cm"/>
+</p><p>
+  <label for="meter">M</label> &nbsp;
+  <span> {{cm | cmtom}}m </span>
+</p>
+</div>
+<div>
+    <h3>(Celsius to Fahrenheit)</h3>
+<p>
+  <label for="Celsius">CEL</label> &nbsp;&nbsp;
+  <input [(ngModel)]="cel"  name="cel" type="number" id="cel"/>
+</p><p>
+  <label for="meter">F</label> &nbsp;
+  <span> {{cel | citofh}}°F </span>
+</p>
+</div>
