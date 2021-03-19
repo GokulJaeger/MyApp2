@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <h4>Login</h4>
     <div>
         <span>User ID</span>
@@ -17,3 +17,27 @@
     </div>
 
 </div>
+
+<br>
+<hr> -->
+
+<body>
+    <div class="page">
+        <div class="intro-header">
+            <div class="bg-image parallax-bg"></div>
+            <div class="header-content row">
+                <h1>Majestic Title</h1>
+                <h2>An awesome subtitle</h2>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <form class="login">
+                    <input type="text" [(ngModel)]="uid" placeholder="Username" name="User">
+                    <input type="password" [(ngModel)]="pwd" placeholder="Password" name="password">
+                    <button (click)="handlelogin()">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -12,6 +11,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { KmtomPipe } from './components/pipes/kmtom.pipe';
 import { CmtomPipe } from './components/pipes/cmtom.pipe';
 import { CitofhPipe } from './components/pipes/citofh.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,8 @@ import { CitofhPipe } from './components/pipes/citofh.pipe';
     CmtomPipe,
     CitofhPipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
