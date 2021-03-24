@@ -4,6 +4,7 @@ import { CountryComponent } from './components/country/country.component';
 import { CurrencyComponent } from './components/currency/currency.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FraudpaymentComponent } from './components/fraudpayment/fraudpayment.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { PaymentComponent } from './components/payment/payment.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'paypayment', component: PaypaymentComponent },
       { path: 'customer', component: CustomerComponent },
       { path: 'country', component: CountryComponent },
+      { path: 'fraudpayment', component: FraudpaymentComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },

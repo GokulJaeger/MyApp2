@@ -1,0 +1,30 @@
+<div>
+    <span>Fraud Details using Observable</span>
+    <div>
+        <button (click)="getdatas()">GetDetails</button>
+    </div>
+    <div>
+        <table border="2">
+            <tr style="font-size: medium; font-weight: bold;">
+                <td>ID</td>
+                <td>Name</td>
+                <td>Customer_ID</td>
+                <td>Pay_Amount</td>
+                <td>Currency</td>
+                <td>From_Account</td>
+                <td>To_Account</td>
+                <td>Balance</td>
+            </tr>
+            <tr *ngFor="let p of fpay">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.cid}}</td>
+                <td>Rs.{{p.pAmount}}</td>
+                <td>{{p.currency}}</td>
+                <td>{{p.fAccount}}</td>
+                <td>{{p.tAccount}}</td>
+                <td>Rs.{{p.balance}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
