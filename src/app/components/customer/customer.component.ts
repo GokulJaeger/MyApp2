@@ -8,11 +8,11 @@ import customer from 'src/app/models/customer';
 })
 export class CustomerComponent implements OnInit {
   cust: customer[] = [];
-  gcust:customer[]=[];
   invalid: boolean = false;
   nvalid: boolean = false;
   valid:boolean=false;
   num:number=0;
+  balanceamount:any;
   constructor() {
     this.cust = [
       {
@@ -56,14 +56,22 @@ export class CustomerComponent implements OnInit {
   nable() {
     this.nvalid = true;
   }
-  getdata(){
+  able(){
     this.valid=true;
   }
-  // getcust(data:customer){
 
-  //   if(data.cid===this.num){
-  //     this.gcust.push(data);
-  //   }
-    
-  // }
+  getbalance(a:number, ab:number, cl:number){
+    if(a<cl){
+      if(a<ab){
+        this.balanceamount=ab-a;
+      }
+      else{
+        this.balanceamount="Low Balance!";
+      }
+    }
+    else{
+      this.balanceamount="Card Limit Exceeded!";
+    }
+  return this.balanceamount;
+  }
 }

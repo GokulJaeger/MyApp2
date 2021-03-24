@@ -74,7 +74,7 @@
                 <td>{{c.cname}}</td>
                 <td>{{c.ptype}}</td>
                 <td>{{c.amt}}</td>
-                <td>{{c.card}}</td>
+                <td>{{c.card |cardmask}}</td>
                 <td>{{c.limit}}</td>
                 <td>{{c.balance}}</td>
                 <td>{{c.dob}}</td>
@@ -82,11 +82,10 @@
             </tr>
         </table>
     </div>
-    <!-- <div>
-        <h4>Customer Details</h4>
-        <input type="number" [value]="num">
-        <button (click)="getdata()">GetData</button>
-    </div>>
+
+    <div>
+        <button (click)="able()">Balance Check</button>
+    </div>
     <div *ngIf="valid">
         <table border="1">
             <tr>
@@ -99,18 +98,21 @@
                 <td>Account Balance</td>
                 <td>Date of Birth</td>
                 <td>Age</td>
+                <td>Balance Amount</td>
             </tr>
-            <tr *ngFor="let c of gcust">
+            <tr *ngFor="let c of cust">
                 <td>{{c.cid}}</td>
                 <td>{{c.cname}}</td>
                 <td>{{c.ptype}}</td>
                 <td>{{c.amt}}</td>
-                <td>{{c.card}}</td>
+                <td>{{c.card |cardmask}}</td>
                 <td>{{c.limit}}</td>
                 <td>{{c.balance}}</td>
                 <td>{{c.dob}}</td>
                 <td>{{c.dob|age}}</td>
+                <td>{{getbalance(c.amt,c.balance,c.limit)}}</td>
             </tr>
         </table>
-    </div> handleswhile sleeping-->
+    </div>
+
 </div>

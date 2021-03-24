@@ -34,7 +34,7 @@ import { AgePipe } from './components/pipes/age.pipe';
     PaypaymentComponent,
     CustomerComponent,
     CardmaskPipe,
-    AgePipe
+    AgePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
