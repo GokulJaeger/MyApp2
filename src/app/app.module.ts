@@ -12,6 +12,12 @@ import { KmtomPipe } from './components/pipes/kmtom.pipe';
 import { CmtomPipe } from './components/pipes/cmtom.pipe';
 import { CitofhPipe } from './components/pipes/citofh.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { PaymentComponent } from './components/payment/payment.component';
+import { PaypaymentComponent } from './components/paypayment/paypayment.component';
+import { CustomerComponent } from './components/customer/customer.component';
+import { CardmaskPipe } from './components/pipes/cardmask.pipe';
+import { AgePipe } from './components/pipes/age.pipe';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +29,12 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     KmtomPipe,
     CmtomPipe,
-    CitofhPipe
+    CitofhPipe,
+    PaymentComponent,
+    PaypaymentComponent,
+    CustomerComponent,
+    CardmaskPipe,
+    AgePipe
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

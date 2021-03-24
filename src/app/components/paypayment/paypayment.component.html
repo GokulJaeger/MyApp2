@@ -1,0 +1,28 @@
+<div>
+    <div>
+        <h4>Payment Details</h4>
+        <div>
+            <div><input type="text" placeholder="Name" [value]="apay.name" #nam /></div>
+        </div>
+        <div>
+            <div><input type="number" placeholder="Customer Id" [value]="apay.cid" #cid /></div>
+        </div>
+        <div>
+            <div><input type="number" placeholder="Pay Amount" [value]="apay.pAmount" #pamt /></div>
+        </div>
+        <div>
+            <div><input type="text" placeholder="Currency" [value]="apay.currency" #curr /></div>
+        </div>
+        <div>
+            <div><input type="number" placeholder="From Account" [value]="apay.fAccount" #facc /></div>
+        </div>
+        <div>
+            <div><input type="number" placeholder="To Account" [value]="apay.tAccount" #tacc /></div>
+        </div>
+        <div>
+            <div><input type="number" placeholder="Balance Amount" [value]="apay.balance" #balac /></div>
+        </div>
+        <br>
+        <button (click)="handlesAddPayment(nam.value,+cid.value,+pamt.value,curr.value,+facc.value,+tacc.value,+balac.value)" class="btn-btn">Add Payment</button>
+    </div>
+</div>

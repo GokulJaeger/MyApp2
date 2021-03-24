@@ -28,6 +28,8 @@ export class LoginComponent implements OnInit {
     this.authservice.doAuth(this.uid, this.pwd).then((a: Auth[]) => {
       console.log("Promise-->" + this.uid);
       console.log(a);
+      console.log(a[0].password);
+      
       if (this.pwd == a[0].password && this.uid == a[0].userid) {
         sessionStorage.setItem(this.uid, this.pwd);
         this.route.navigate(['dashboard']);

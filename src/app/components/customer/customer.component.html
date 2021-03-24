@@ -1,0 +1,116 @@
+<div>
+    <div>
+        <h4>Customer Details</h4>
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <td>Customer Id</td>
+                <td>Customer Name</td>
+                <td>Payment Type</td>
+                <td>Amount</td>
+                <td>Card Number</td>
+                <td>Card Limit</td>
+                <td>Account Balance</td>
+                <td>Date of Birth</td>
+            </tr>
+            <tr *ngFor="let c of cust">
+                <td>{{c.cid}}</td>
+                <td>{{c.cname}}</td>
+                <td>{{c.ptype}}</td>
+                <td>{{c.amt}}</td>
+                <td>{{c.card}}</td>
+                <td>{{c.limit}}</td>
+                <td>{{c.balance}}</td>
+                <td>{{c.dob}}</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button (click)="enable()">Card Masking</button>
+    </div>
+    <div *ngIf="invalid">
+        <table border="1">
+            <tr>
+                <td>Customer Id</td>
+                <td>Customer Name</td>
+                <td>Payment Type</td>
+                <td>Amount</td>
+                <td>Card Number</td>
+                <td>Card Limit</td>
+                <td>Account Balance</td>
+                <td>Date of Birth</td>
+            </tr>
+            <tr *ngFor="let c of cust">
+                <td>{{c.cid}}</td>
+                <td>{{c.cname}}</td>
+                <td>{{c.ptype}}</td>
+                <td>{{c.amt}}</td>
+                <td>{{c.card |cardmask}}</td>
+                <td>{{c.limit}}</td>
+                <td>{{c.balance}}</td>
+                <td>{{c.dob}}</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button (click)="nable()">Calulating Age</button>
+    </div>
+    <div *ngIf="nvalid">
+        <table border="1">
+            <tr>
+                <td>Customer Id</td>
+                <td>Customer Name</td>
+                <td>Payment Type</td>
+                <td>Amount</td>
+                <td>Card Number</td>
+                <td>Card Limit</td>
+                <td>Account Balance</td>
+                <td>Date of Birth</td>
+                <td>Age</td>
+            </tr>
+            <tr *ngFor="let c of cust">
+                <td>{{c.cid}}</td>
+                <td>{{c.cname}}</td>
+                <td>{{c.ptype}}</td>
+                <td>{{c.amt}}</td>
+                <td>{{c.card}}</td>
+                <td>{{c.limit}}</td>
+                <td>{{c.balance}}</td>
+                <td>{{c.dob}}</td>
+                <td>{{c.dob|age}}</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <div>
+        <h4>Customer Details</h4>
+        <input type="number" [value]="num">
+        <button (click)="getdata()">GetData</button>
+    </div>>
+    <div *ngIf="valid">
+        <table border="1">
+            <tr>
+                <td>Customer Id</td>
+                <td>Customer Name</td>
+                <td>Payment Type</td>
+                <td>Amount</td>
+                <td>Card Number</td>
+                <td>Card Limit</td>
+                <td>Account Balance</td>
+                <td>Date of Birth</td>
+                <td>Age</td>
+            </tr>
+            <tr *ngFor="let c of gcust">
+                <td>{{c.cid}}</td>
+                <td>{{c.cname}}</td>
+                <td>{{c.ptype}}</td>
+                <td>{{c.amt}}</td>
+                <td>{{c.card}}</td>
+                <td>{{c.limit}}</td>
+                <td>{{c.balance}}</td>
+                <td>{{c.dob}}</td>
+                <td>{{c.dob|age}}</td>
+            </tr>
+        </table>
+    </div> handleswhile sleeping-->
+</div>
