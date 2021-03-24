@@ -8,15 +8,15 @@ import { UnitconversionComponent } from './components/unitconversion/unitconvers
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { KmtomPipe } from './components/pipes/kmtom.pipe';
-import { CmtomPipe } from './components/pipes/cmtom.pipe';
-import { CitofhPipe } from './components/pipes/citofh.pipe';
+import { KmtomPipe } from './pipes/kmtom.pipe';
+import { CmtomPipe } from './pipes/cmtom.pipe';
+import { CitofhPipe } from './pipes/citofh.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { PaymentComponent } from './components/payment/payment.component';
 import { PaypaymentComponent } from './components/paypayment/paypayment.component';
 import { CustomerComponent } from './components/customer/customer.component';
-import { CardmaskPipe } from './components/pipes/cardmask.pipe';
-import { AgePipe } from './components/pipes/age.pipe';
+import { CardmaskPipe } from './pipes/cardmask.pipe';
+import { AgePipe } from './pipes/age.pipe';
 
 
 @NgModule({
