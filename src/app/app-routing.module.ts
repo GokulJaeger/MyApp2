@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CountryComponent } from './components/country/country.component';
 import { CurrencyComponent } from './components/currency/currency.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'payment', component: PaymentComponent },
       { path: 'paypayment', component: PaypaymentComponent },
       { path: 'customer', component: CustomerComponent },
+      { path: 'country', component: CountryComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },

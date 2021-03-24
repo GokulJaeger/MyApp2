@@ -17,6 +17,7 @@ import { PaypaymentComponent } from './components/paypayment/paypayment.componen
 import { CustomerComponent } from './components/customer/customer.component';
 import { CardmaskPipe } from './pipes/cardmask.pipe';
 import { AgePipe } from './pipes/age.pipe';
+import { CountryComponent } from './components/country/country.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { AgePipe } from './pipes/age.pipe';
     CustomerComponent,
     CardmaskPipe,
     AgePipe,
+    CountryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

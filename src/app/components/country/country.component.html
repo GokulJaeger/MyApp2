@@ -1,0 +1,62 @@
+<div>
+    <span>Customer Deatils</span>
+    <div>
+        <div>
+            <select (change)="currencytype($event)" class="form-control" style="width: 150px;">
+                <option value="sadfsdf" disabled selected>Country Currency</option>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div *ngIf="invalid">
+            <table border="1">
+                <tr>
+                    <td>ID</td>
+                    <td>Customer Name</td>
+                    <td>Country Name</td>
+                    <td>Country Currency</td>
+                    <td>City</td>
+                    <td>Card Type</td>
+                    <td>Card Limit</td>
+                </tr>
+                <tr *ngFor="let c of cntry">
+                    <td>{{c.id}}</td>
+                    <td>{{c.customer_name}}</td>
+                    <td>{{c.country_name}}</td>
+                    <td>{{c.country_currency}}</td>
+                    <td>{{c.city}}</td>
+                    <td>{{c.cardtype}}</td>
+                    <td>{{c.cardlimit}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+        <input type="text" placeholder="Enter name" [(ngModel)]="gcname"/>
+        <button (click)="getname()">Get</button>
+        </div>
+        <div *ngIf="nvalid">
+            <table border="1">
+                <tr>
+                    <td>ID</td>
+                    <td>Customer Name</td>
+                    <td>Country Name</td>
+                    <td>Country Currency</td>
+                    <td>City</td>
+                    <td>Card Type</td>
+                    <td>Card Limit</td>
+                </tr>
+                <tr *ngFor="let c of cntry2">
+                    <td>{{c.id}}</td>
+                    <td>{{c.customer_name}}</td>
+                    <td>{{c.country_name}}</td>
+                    <td>{{c.country_currency}}</td>
+                    <td>{{c.city}}</td>
+                    <td>{{c.cardtype}}</td>
+                    <td>{{c.cardlimit}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
